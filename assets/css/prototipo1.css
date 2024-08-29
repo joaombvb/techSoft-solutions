@@ -2,21 +2,14 @@
     padding: 20px;
 }
 
-h1 {
+.prototipo-titulo {
     background-color: var(--primary-color);
     padding: 1.5rem;
     border-radius: 8px;
     color: var(--white-color);
     box-shadow: var(--box-shadow);
     margin: 0px 6%;
-}
-
-h1, h2 {
     text-align: center;
-}
-
-h2 {
-    margin:0 0 15px;
 }
 
 .table-container {
@@ -105,6 +98,8 @@ h3 {
 
 .section-txt {
     color: var(--white-color);
+    text-align: center;
+    margin: 15px 0px 15px;
 }
 
 /* TERCEIRA SEÇÃO */
@@ -144,6 +139,7 @@ h3 {
 
 .taxa-acerto_hr {
     width: 60%;
+    margin: auto;
 }
 
 .emitir-previsao {
