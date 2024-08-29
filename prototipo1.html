@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>TechSoft Solutions</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="./assets/img/logo2.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="solucao.html" class="nav-link">Solução</a></li>
+                    <li class="nav-item"><a href="prototipo1.html" class="nav-link">Capacidade e Custos</a></li>
+                    <li class="nav-item"><a href="prototipo2.html" class="nav-link">Demandas e Contratos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre o Projeto</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>GESTÃO DE CAPACIDADE E CUSTOS</h1>
+    
+            <!-- Primeira seção -->
+            <div class="table-container">
+                <div class="table-title">CONSULTORES</div>
+                <table id="employees">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Senioridade</th>
+                            <th>Disponibilidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados dos funcionários serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="table-container">
+                <div class="table-title">CHAMADOS</div>
+                <table id="tickets">
+                    <thead>
+                        <tr>
+                            <th>Protocolo</th>
+                            <th>Ordem de Abertura</th>
+                            <th>Senioridade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados dos chamados serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+    
+           <!-- Segunda Seção -->
+            <div class="section">
+                <h2 class="section-txt">GRÁFICOS COMPARATIVOS</h2>
+                <hr>
+                <h3 class="section-txt">CONSULTORES</h3>
+                <div class="charts-container">
+                    <div class="chart-container">
+                        <canvas id="employeeUsageChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="employeeAvailabilityChart"></canvas>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="section-txt">CHAMADOS</h3>
+                <div class="charts-container">
+                    <div class="chart-container">
+                        <canvas id="ticketStatusChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="ticketStatusBreakdownChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Terceira seção -->
+            <section class="section">
+                <h2 class="section-txt">PREVISÃO</h2>
+                <hr>
+                <div class="previsao">
+                    <div class="charts-container charts-previsao">
+                        <div class="chart-container chart-previsao">
+                            <canvas id="employeeUsageForecastChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="taxa-acerto">
+                        <h3>TAXAS DE ACERTO</h3>
+                        <p class="taxa-acerto_txt"><span>Junior:</span><span>.....80%</span></p>
+                        <p class="taxa-acerto_txt"><span>Pleno:</span><span>.....79%</span></p>
+                        <p class="taxa-acerto_txt"><span>Sênior:</span><span>.....92%</span></p>
+                        <hr class="taxa-acerto_hr">
+                        <p class="taxa-acerto_txt"><span>MÉDIA TOTAL:</span><span>.....84%</span></p>
+                        <div class="emitir-previsao">
+                            <h3>EMITIR NOVA PREVISÃO</h3>
+                            <form>
+                                <div>
+                                    <label for="data" class="emitir-previsao_txt">Selecione a data:</label>
+                                    <input type="date" id="data" name="data">
+                                </div>
+                                <div>
+                                    <input type="submit" value="Enviar" class="emitir-previsao_bt">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./assets/js/prototipo1.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+.container {
+    padding: 20px;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    margin: 0px 6%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    margin:0 0 15px;
+}
+
+.table-container {
+    margin: var(--section-margin);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-title {
+    text-align: center;
+    margin-bottom: 10px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+table, th, td {
+    border: 1px solid var(--grey-color);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--grey-color);
+}
+
+tbody tr:hover {
+    background-color: var(--light-grey-color);
+}
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Segunda seção */
+
+.section {
+    margin: var(--section-margin);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chart-container {
+    width: 48%;
+    box-shadow: var(--box-shadow);;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    margin: 0px 20px 20px;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.section-txt {
+    color: var(--white-color);
+}
+
+/* TERCEIRA SEÇÃO */
+
+.previsao {
+    margin-top: 2em;
+    display: flex;
+}
+
+.charts-previsao {
+    width: 50%;
+}
+
+.chart-previsao {
+    width: 100%;
+}
+
+.taxa-acerto {
+    color: var(--white-color);
+    text-align: center;
+    width: 50%;
+}
+.taxa-acerto form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8em;
+}
+
+.taxa-acerto_txt {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 1em 0.2em 0.5em;
+    margin: 0 8em;
+}
+
+.taxa-acerto_hr {
+    width: 60%;
+}
+
+.emitir-previsao {
+    margin-top: 3em;
+}
+
+.emitir-previsao_bt {
+    display: block;
+    margin: 1.5em auto;
+    padding: 0.8em 2em;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);    
+}
+
+.emitir-previsao_bt:hover {
+    color: var(--white-color);
+    background-color: #016db5;
+}
+
+#data {
+    display: block;
+    margin: 10px auto;
+    padding: 0.5em;
+    border-radius: 8px;
+    border: none;
+}
