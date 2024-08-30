@@ -110,7 +110,7 @@ function atualizarGraficos(empresa) {
 
     graficoContratado = new Chart(ctxContratado, {
         type: 'bar',
-        data: generateChartData(['Junior', 'Pleno', 'Senior'], dados.contratado, 'Funcionários Contratados'),
+        data: generateChartData(['Junior', 'Pleno', 'Senior'], dados.contratado, 'Consultores em uso'),
         options: {
             responsive: true,
             scales: {
@@ -123,7 +123,7 @@ function atualizarGraficos(empresa) {
 
     graficoUsoReal = new Chart(ctxUsoReal, {
         type: 'bar',
-        data: generateChartData(['Junior', 'Pleno', 'Senior'], dados.usoReal, 'Funcionários em Uso Real'),
+        data: generateChartData(['Junior', 'Pleno', 'Senior'], dados.usoReal, 'Consultores contratados'),
         options: {
             responsive: true,
             scales: {
