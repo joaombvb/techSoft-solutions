@@ -1,0 +1,131 @@
+.beneficios-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios-txt {
+    text-align: center;
+    font-size: 30px;
+    margin: 1em 18%;
+}
+
+.beneficios-txt strong {
+    color: var(--primary-color);
+}
+
+.slider {
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 700px;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide p {
+    box-sizing: border-box;
+    text-align: center;
+    width: 700px;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 3em;
+    padding: 4.5em 2em 7em;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: var(--primary-color);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+#radio5:checked ~ .first {
+    margin-left: -400%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 700px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--primary-color);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--primary-color);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--primary-color);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--primary-color);
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: var(--primary-color);
+}
