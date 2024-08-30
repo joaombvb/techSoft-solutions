@@ -30,16 +30,16 @@
 
 .pitch-titulo {
     margin-bottom: 1em;
-    padding: 1em 0em;
+    padding: 0.7em 0em;
     font-size: 25px;
     color: var(--white-color);
     background-color: var(--primary-color);
     box-shadow: var(--box-shadow);
-    border-radius: 5px;
+    border-radius: 0 0 15px 15px;
 }
 
 .pitch-video {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     box-shadow: var(--box-shadow);
     height: 315px;
     width: 560px;
