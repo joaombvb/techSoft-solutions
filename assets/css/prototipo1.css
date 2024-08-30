@@ -8,7 +8,7 @@
     border-radius: 8px;
     color: var(--white-color);
     box-shadow: var(--box-shadow);
-    margin: 0px 6%;
+    margin: 0px 10%;
     text-align: center;
 }
 
@@ -99,7 +99,7 @@ tbody tr:hover {
 .section-txt {
     color: var(--white-color);
     text-align: center;
-    margin: 15px 0px 15px;
+    margin: 20px 0px 30px;
 }
 
 /* TERCEIRA SEÇÃO */
