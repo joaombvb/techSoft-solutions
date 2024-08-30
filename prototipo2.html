@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>TechSoft Solutions</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <img src="./assets/img/logo2.png">
+                <img src="./assets/img/logo2.png" alt="Logo">
             </div>
             <div class="nav-list">
                 <ul>
@@ -26,11 +27,54 @@
         </nav>
     </header>
     <main>
-
+        <div class="container">
+            <h1 class="prototipo-titulo">GESTÃO DE DEMANDAS E CONTRATOS</h1>
+            <div class="selecionar-empresa">
+                <label for="empresa" class="selecionar-txt">Selecione um cliente:</label>
+                <select id="empresa" name="empresa" onchange="mostrarDadosEmpresa()">
+                  <option value="">Selecione...</option>
+                  <option value="infotech">InfoTech</option>
+                  <option value="innovatech">InnovaTech</option>
+                  <option value="globalventures">Global Ventures</option>
+                  <option value="futureworks">FutureWorks</option>
+                  <option value="neotech">NeoTech</option>
+                </select>    
+            </div>
+            <section class="dados-empresa" id="detalhes-empresa">
+                <!-- Os dados da empresa selecionada aparecerão aqui -->
+            </section>
+                <div class="titulo-grafico-div">
+                    <h2 class="section-txt">SERVIÇO PRESTADO</h2>
+                    <h2 class="section-txt">SERVIÇO CONTRATADO</h2>
+                </div>
+            <div class="charts-container2">
+                <div class="chart-container">
+                    <canvas id="grafico-contratado"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="grafico-uso-real"></canvas>
+                </div>
+            </div>
+            <div class="solicitacao-div">
+                <div class="solicitacao">
+                    <h2 class="section-txt solicitacao-titulo">CONTRATO</h2>
+                    <p class="solicitacao-txt">Emitir uma cópia do contrato atual</p>
+                    <button class="solicitacao-botao">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Emitir</p>
+                    </button>
+                </div>
+                <div class="solicitacao">
+                    <h2 class="section-txt solicitacao-titulo">SUGESTÃO DE REITIFICAÇÃO</h2>
+                    <p class="solicitacao-txt">Emitir uma sugestão de reitificação contratual com base na análise de desvios.</p>
+                    <button class="solicitacao-botao">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Emitir</p>
+                    </button>
+                </div>
+            </div>
     </main>
-    <footer>
-
-    </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/prototipo2.js"></script>
 </body>
 </html>
