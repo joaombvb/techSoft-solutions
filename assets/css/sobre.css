@@ -1,0 +1,69 @@
+.sobre-titulo {
+    font-size: 50px;
+    text-align: center;
+    margin: 3rem;
+    text-transform: uppercase;
+}
+
+.sobre-titulo strong {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.sobre-subtitulo {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5em 0;
+    margin: 2em 15em 1em;
+    border-radius: 15px 15px 0 0;
+}
+
+.integrantes-section {
+    display: flex;
+    padding: 3em 0;
+    justify-content: space-evenly;
+}
+
+.integrante-avatar {
+    width: 250px;
+    text-align: center;
+}
+
+#avatar-joao {
+    margin-left: 28px;
+}
+
+.integrante-nome {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 1em 0 0.3em;
+}
+
+.integrante-descricao {
+    text-align: center;
+    font-size: 18px;
+}
+
+.icones-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 2em;
+}
+
+.icone-tec {
+    font-size: 70px;
+    color: var(--primary-color);
+}
+
+.tecnologias-txt {
+    padding: 1em 25em 0;
+    font-size: 20px;
+    text-align: center;
+}
